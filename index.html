@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang ="jp">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>sel2 test</title>
+
+  <script src = "js/jquery-1.11.1.min.js"></script>
+  <script src = "js/Vague.js"></script>
+  <script src = "js/script.js"></script>
+
+  <style type = "text/css">
+  body{
+    margin:0px 0px 0px;
+  }
+  .container{
+
+    width:100%;
+    heigt:100%;
+
+
+
+  }
+  #data{
+    position:fixed;
+    top:10px;
+    left:10px;
+    z-index:50;
+  }
+
+  #logo{
+
+    position:relative;
+    text-align:center;
+    top:200px;
+
+
+    opacity:0;
+    z-index:40;
+
+  }
+
+  #menu{
+    position:fixed;
+
+    top: 10px;
+    left :10px;
+
+    z-index:20;
+
+    display:none;
+  }
+
+  #back{
+    position:relative;
+    top:100px;
+    z-index:10;
+
+    opacity:0;
+  }
+
+
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <div id = "data">s=0 / blur_v = 0 / logo_alpha = 0</div>
+
+  <div id = "logo">
+    <img src = "image/logo02_gray.png" width = "600px">
+  </div>
+
+
+  <div id = "menu">
+    <img class = "l1" src = "image/logo03.png">
+  </div>
+
+
+
+  <div id = "back">
+    <img class ="container" src = "image/sel_2_bg.jpg">
+  </div>
+
+
+
+
+</body>
+
+</html>
