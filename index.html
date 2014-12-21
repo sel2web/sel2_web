@@ -16,8 +16,34 @@
   }
   .container{
 
+    position:relative;
     width:100%;
     heigt:100%;
+    margin:0px 0px 0px;
+    display:none;
+
+
+  }
+  .container_2{
+
+    position:relative;
+    width:100%;
+    heigt:100%;
+    top:-20px;
+    margin:0px 0px 0px;
+    display:none;
+
+
+  }
+  .container_3{
+
+    position:relative;
+    width:100%;
+    heigt:100%;
+    top:-40px;
+    margin:0px 0px 0px;
+    display:none;
+    
 
 
 
@@ -28,13 +54,19 @@
     left:10px;
     z-index:50;
   }
+  #data_2{
+    position:fixed;
+    top:25px;
+    left:10px;
+    z-index:50;
+  }
 
   #logo{
 
     position:relative;
     text-align:center;
     top:200px;
-
+    height:600px;
 
     opacity:0;
     z-index:40;
@@ -54,10 +86,11 @@
 
   #back{
     position:relative;
-    top:100px;
+    top:0px;
     z-index:10;
+    height:5000px;
 
-    opacity:0;
+
   }
 
 
@@ -70,6 +103,8 @@
 
 <body>
   <div id = "data">s=0 / blur_v = 0 / logo_alpha = 0</div>
+  <div id = "data_2">s=0 / blur_v = 0 / logo_alpha = 0</div>
+
 
   <div id = "logo">
     <img src = "image/logo02_gray.png" width = "600px">
@@ -83,7 +118,9 @@
 
 
   <div id = "back">
-    <img class ="container" src = "image/sel_2_bg.jpg">
+    <img class ="container" src = "image/bg.jpg">
+    <img class = "container_2" src = "image/bg.jpg">
+    <img class = "container_3" src = "image/bg.jpg">
   </div>
 
 
