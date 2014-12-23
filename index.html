@@ -11,111 +11,143 @@
   <script src = "js/script.js"></script>
 
   <style type = "text/css">
-  body{
-    margin:0px 0px 0px;
+  head{
+    margin: 0px 0px 0px;
   }
+  body{
+    margin: 0px 0px 0px;
+  }
+
   .container{
 
     position:relative;
-    width:100%;
-    heigt:100%;
-    margin:0px 0px 0px;
-    display:none;
+    min-width: 1000px;
+    width: 100%;
+    heigt: 100%;
+    margin: 0px 0px 0px;
+    display: none;
 
 
   }
   .container_2{
 
     position:relative;
-    width:100%;
-    heigt:100%;
-    top:-20px;
-    margin:0px 0px 0px;
-    display:none;
-
+    min-width: 1000px;
+    width: 100%;
+    heigt: 100%;
+    top: -20px;
+    margin: 0px 0px 0px;
+    display: none;
 
   }
   .container_3{
 
     position:relative;
-    width:100%;
-    heigt:100%;
-    top:-40px;
-    margin:0px 0px 0px;
-    display:none;
-    
-
-
+    min-width: 1000px;
+    width: 100%;
+    heigt: 100%;
+    top: -40px;
+    margin: 0px 0px 0px;
+    display: none;
 
   }
   #data{
+
     position:fixed;
-    top:10px;
-    left:10px;
-    z-index:50;
+    top: 10px;
+    left: 10px;
+    z-index: 50;
+
   }
   #data_2{
+
     position:fixed;
-    top:25px;
-    left:10px;
-    z-index:50;
+    top: 25px;
+    left: 10px;
+    z-index: 50;
+
   }
 
   #logo{
 
     position:relative;
     text-align:center;
-    top:200px;
-    height:600px;
+    top: 200px;
+    height: 600px;
+    opacity: 0;
+    z-index: 40;
 
-    opacity:0;
+  }
+  #arrow{
+
+    position:relative;
+    text-align:center;
+    top: 50px;
     z-index:40;
+    opacity:0;
 
   }
 
-  #menu{
+  #menu_logo{
+
     position:fixed;
+    margin:5px;
+    top: -500px;
+    left: 80px;
+    float: left;
+    z-index: 20;
+    color: white;
+    font-size:20px;
 
-    top: 10px;
-    left :10px;
-
-    z-index:20;
-
-    display:none;
   }
+  #lg{
+    position:relative;
+    top: 5px;
+    margin:0px 10px 0px;
+  }
+  a{
+    margin:5px;
+  }
+
 
   #back{
     position:relative;
-    top:0px;
-    z-index:10;
-    height:5000px;
+    top: -100px;
+    z-index: 10;
+    height: 5000px;
 
 
   }
 
-
-
-
-
   </style>
+
+  <div id = "menu_logo">
+    <img id = "lg" src = "image/logo04.png" width = "100px"></li>
+    <a id = "movie">Movie</a>
+    <a id = "about">About</a>
+    <a id = "artists">Artists</a>
+    <a id = "events"> Events</a>
+    <a id = "acsess"> Acsess</a>
+  </div>
+
 
 </head>
 
 <body>
-  <div id = "data">s=0 / blur_v = 0 / logo_alpha = 0</div>
-  <div id = "data_2">s=0 / blur_v = 0 / logo_alpha = 0</div>
-
+  <!--<div id = "data">s=0 / blur_v = 0 / logo_alpha = 0</div>-->
 
   <div id = "logo">
     <img src = "image/logo02_gray.png" width = "600px">
   </div>
 
-
-  <div id = "menu">
-    <img class = "l1" src = "image/logo03.png">
+  <div id = "arrow">
+    <img src = "image/arrow.png" width = "50px">
   </div>
 
 
+  <div id = "menu">
+
+  </div>
 
   <div id = "back">
     <img class ="container" src = "image/bg.jpg">
