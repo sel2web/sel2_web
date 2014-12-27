@@ -87,27 +87,44 @@
     opacity:0;
 
   }
+  #movie,#about,#artists,#events,#acsess{
+    position:relative;
+    float:left;
+    top:24px;
+    left: 208px;
+    margin: 0px 25px 0px;
+    color: #4D4E4F;
+    font-family: "Avenir";
 
-  #menu_logo{
+
+
+
+  }
+
+  .menu_logo{
 
     position:fixed;
-    margin:5px;
+    background-color:rgba(250,250,250,0.7);
+    float:left;
+    width:100%;
+    height: 68px;
     top: -500px;
-    left: 80px;
-    float: left;
+    left: 0px;
     z-index: 20;
     color: white;
-    font-size:20px;
+    font-size:15px;
 
   }
+
   #lg{
-    position:relative;
-    top: 5px;
+    position:absolute;
+    float:left;
+    top: 6px;
+    left:60px;
     margin:0px 10px 0px;
   }
-  a{
-    margin:5px;
-  }
+
+
 
 
   #back{
@@ -119,16 +136,18 @@
 
   }
 
-  </style>
+</style>
 
-  <div id = "menu_logo">
-    <img id = "lg" src = "image/logo04.png" width = "100px"></li>
-    <a id = "movie">Movie</a>
-    <a id = "about">About</a>
-    <a id = "artists">Artists</a>
-    <a id = "events"> Events</a>
-    <a id = "acsess"> Acsess</a>
-  </div>
+<div class = "menu_logo">
+  <img id = "lg" src = "image/logo03_gray.png" width = "80px"></img>
+
+  <p id = "movie">MOVIE</p>
+  <p id = "about">ABOUT</p>
+  <p id = "artists">ARTISTS</p>
+  <p id = "events"> EVENTS</p>
+  <p id = "acsess"> ACSESS</p>
+
+</div>
 
 
 </head>
