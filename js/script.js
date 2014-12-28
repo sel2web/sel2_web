@@ -31,6 +31,7 @@ $(function(){
       blur_v=10;
     }
 
+
     var vague = $(".container").Vague({intensity:blur_v});
     var vague_2 = $(".container_2").Vague({intensity:blur_v});
     var vague_3 = $(".container_3").Vague({intensity:blur_v});
@@ -80,34 +81,30 @@ $(function(){
   });
 
   $("#movie").hover(function(){
-      $("#movie").css("color","white").css("text-shadow"," 1px 1px 0px #000000","-1px 1px 0px #000000","1px -1px 0px #000000","-1px -1px 0px #000000")
-  },function(){
-    $("#movie").css("color","#4D4E4F").css("text-shadow","none")
+      $("#movie").animate({'color':"#757C82"},150);},function(){
+    $("#movie").animate({'color':"#4D4E4F"},150);
   });
 
-  $("#abour").hover(function(){
-    $("#about").css("color","#191919")
-  },function(){
-    $("#about").css("color","#4D4E4F")
+  $("#about").hover(function(){
+    $("#about").animate({'color':"#757C82"},150);},function(){
+      $("#about").animate({'color':"#4D4E4F"},150);
   });
+
 
   $("#artists").hover(function(){
-    $("#artists").css("color","#191919")
-  },function(){
-    $("#artists").css("color","#4D4E4F")
-  });
+    $("#artists").animate({'color':"#757C82"},150);},function(){
+      $("#artists").animate({'color':"#4D4E4F"},150);
+    });
 
   $("#events").hover(function(){
-    $("#events").css("color","#191919")
-  },function(){
-    $("#events").css("color","#4D4E4F")
-  });
+    $("#events").animate({'color':"#757C82"},150);},function(){
+      $("#events").animate({'color':"#4D4E4F"},150);
+    });
 
   $("#acsess").hover(function(){
-    $("#acsess").css("color","#191919")
-  },function(){
-    $("#acsess").css("color","#4D4E4F")
-  });
+    $("#acsess").animate({'color':"#757C82"},150);},function(){
+      $("#acsess").animate({'color':"#4D4E4F"},150);
+    });
 
 
 

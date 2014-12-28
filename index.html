@@ -8,15 +8,23 @@
 
   <script src = "js/jquery-1.11.1.min.js"></script>
   <script src = "js/Vague.js"></script>
+  <script src = "js/jquery.smoothScroll.js"></script>
   <script src = "js/script.js"></script>
 
   <style type = "text/css">
-  head{
+  head , body{
     margin: 0px 0px 0px;
+    height: 100%;
   }
-  body{
-    margin: 0px 0px 0px;
+
+  #main{
+    position:relative;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+
   }
+
 
   .container{
 
@@ -35,7 +43,7 @@
     min-width: 1000px;
     width: 100%;
     heigt: 100%;
-    top: -20px;
+    top: -15px;
     margin: 0px 0px 0px;
     display: none;
 
@@ -46,7 +54,7 @@
     min-width: 1000px;
     width: 100%;
     heigt: 100%;
-    top: -40px;
+    top: -35px;
     margin: 0px 0px 0px;
     display: none;
 
@@ -104,7 +112,7 @@
   .menu_logo{
 
     position:fixed;
-    background-color:rgba(250,250,250,0.7);
+    background-color:rgba(250,250,250,0.8);
     float:left;
     width:100%;
     height: 68px;
@@ -131,17 +139,43 @@
     position:relative;
     top: -100px;
     z-index: 10;
-    height: 5000px;
+    min-height:100%
+}
 
+  
+  #test1{
+    position:absolute;
+    top: 1500px;
+    z-index:30;
 
   }
+
+  #test2{
+    position:absolute;
+    top: 2000px;
+    z-index:30;
+  }
+  #footer{
+    position:absolute;
+    width : 100%;
+    height:100px;
+    background-color:rgba(250,250,250,0.8);
+    float:left;
+    bottom: 0;
+    z-index: 20;
+
+  }
+
+
+
+
 
 </style>
 
 <div class = "menu_logo">
   <img id = "lg" src = "image/logo03_gray.png" width = "80px"></img>
 
-  <p id = "movie">MOVIE</p>
+    <a href = "#test1"><p id = "movie">MOVIE</p></a>
   <p id = "about">ABOUT</p>
   <p id = "artists">ARTISTS</p>
   <p id = "events"> EVENTS</p>
@@ -153,30 +187,43 @@
 </head>
 
 <body>
+    <section>
+      <div id = "main">
+        <div id = "contents">
   <!--<div id = "data">s=0 / blur_v = 0 / logo_alpha = 0</div>-->
 
-  <div id = "logo">
-    <img src = "image/logo02_gray.png" width = "600px">
-  </div>
+        <div id = "logo">
+          <img src = "image/logo02_gray.png" width = "600px">
+        </div>
 
-  <div id = "arrow">
-    <img src = "image/arrow.png" width = "50px">
-  </div>
+        <div id = "arrow">
+          <img src = "image/arrow.png" width = "50px">
+        </div>
 
 
-  <div id = "menu">
-
-  </div>
-
-  <div id = "back">
-    <img class ="container" src = "image/bg.jpg">
-    <img class = "container_2" src = "image/bg.jpg">
-    <img class = "container_3" src = "image/bg.jpg">
-  </div>
+        <div id = "back">
+          <img class ="container" src = "image/bg.jpg">
+          <img class = "container_2" src = "image/bg.jpg">
+          <img class = "container_3" src = "image/bg.jpg">
+        </div>
 
 
 
+        <div id = "test1">
+          test1
+        </div>
+        <div id = "test2">
+          test2
+        </div>
 
+
+      </div>
+      <div id = "footer">
+
+      </div>
+    </div>
+  </section>
 </body>
+
 
 </html>
