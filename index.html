@@ -10,11 +10,12 @@
   <script src = "js/Vague.js"></script>
   <script src = "js/jquery.smoothScroll.js"></script>
   <script src = "js/script.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <style type = "text/css">
   head , body{
     margin: 0px 0px 0px;
     height: 100%;
+    font-family: "Avenir";
   }
 
   #main{
@@ -102,7 +103,7 @@
     left: 208px;
     margin: 0px 25px 0px;
     color: #4D4E4F;
-    font-family: "Avenir";
+
 
 
 
@@ -118,7 +119,7 @@
     height: 68px;
     top: -500px;
     left: 0px;
-    z-index: 20;
+    z-index: 60;
     color: white;
     font-size:15px;
 
@@ -131,22 +132,29 @@
     left:60px;
     margin:0px 10px 0px;
   }
+  #terop{
+    position:absolute;
+
+    right:30px;
+    margin:10px;
+  }
 
 
 
 
   #back{
-    position:relative;
+    position:absolute;
     top: -100px;
     z-index: 10;
     min-height:100%
 }
 
-  
+
   #test1{
     position:absolute;
     top: 1500px;
     z-index:30;
+    height:600px;
 
   }
 
@@ -154,17 +162,47 @@
     position:absolute;
     top: 2000px;
     z-index:30;
+    height:600px;
   }
   #footer{
     position:absolute;
+    margin:0;
     width : 100%;
-    height:100px;
+    height:200px;
     background-color:rgba(250,250,250,0.8);
-    float:left;
+
     bottom: 0;
-    z-index: 20;
+    z-index: 30;
+    font-size: 10px;
+
 
   }
+  #footer p{
+    margin:12px;
+  }
+  #link{
+    position:absolute;
+    padding:10px;
+    left:100px;
+    margin:30px;
+
+    width:300px;
+  }
+  li{
+    font-size: 8px;
+    margin:15px;
+  }
+  #sns{
+    position:absolute;
+    padding:10px;
+    left:500px;
+    margin:30px;
+
+
+  }
+
+
+
 
 
 
@@ -180,6 +218,8 @@
   <p id = "artists">ARTISTS</p>
   <p id = "events"> EVENTS</p>
   <p id = "acsess"> ACSESS</p>
+
+  <img id = "terop" src = "image/terop.png" width = "300px"></img>
 
 </div>
 
@@ -209,17 +249,154 @@
 
 
 
-        <div id = "test1">
-          test1
+        <div class="box">
+          <div id="movie">
+
+          </div>
         </div>
-        <div id = "test2">
-          test2
+        <div class="box">
+          <img class="box_h" src="img/about_sel.png"></img>
+          <div class="text">
+            <p>
+              「sél」という発音記号には、“細胞”を表す「cell」と”宣伝する”「sell」という意味が含まれています。メディア芸術の持つ、枠にはまることのない可能性を、私たちは、日々生まれ変わる細胞に重ね合わせました。<br>
+              本展示は、学内で課題として制作されたデジタルな映像作品から、手書きのアニメーション、 観客が空間を体験する作品までが揃う、総勢約40名の学生による展覧会です。
+            </p>
+          </div>
         </div>
+        <div class="box">
+          <img class="box_h" src="img/artist.png"></img>
+          <div id="box_h2">
+            <p>出展者 多摩美術大学メディア芸術コース3年</p>
+          </div>
+          <div class="text" style="padding-bottom: 10px;">
+            <div id="list">
+              <dt id="break"><li><a href="">伊川 祐奈</a></li></dt>
+              <dt><li><a href="">久保 雄基</a></li></dt>
+              <dt><li><a href="">鈴木 彩文</a></li></dt>
+              <dt><li><a href="">田中 理沙子</a></li></dt>
+              <dt><li><a href="">水野 安奈</a></li></dt><br>
+
+              <dt id="break"><li><a href="">石毛 健太</a></li></dt>
+              <dt><li><a href="">小池 奈緒</a></li></dt>
+              <dt><li><a href="">鈴木 剛志</a></li></dt>
+              <dt><li><a href="">長澤 実佳</a></li></dt>
+              <dt><li><a href="">南 秦伸</a></li></dt><br>
+
+              <dt id="break"><li><a href="">石原 瑠奈</a></li></dt>
+              <dt><li><a href="">小林 桜</a></li></dt>
+              <dt><li><a href="">関 亮人</a></li></dt>
+              <dt><li><a href="">原 淳之助</a></li></dt>
+              <dt><li><a href="">持田 寛太</a></li></dt><br>
+
+              <dt id="break"><li><a href="">太田 慎吾</a></li></dt>
+              <dt><li><a href="">小林 悠希</a></li></dt>
+              <dt><li><a href="">関口 和希</a></li></dt>
+              <dt><li><a href="">原島 望</a></li></dt>
+              <dt><li><a href="">吉川 英里</a></li></dt><br>
+
+              <dt id="break"><li><a href="">大間 麻子</a></li></dt>
+              <dt><li><a href="">志賀 健</a></li></dt>
+              <dt><li><a href="">髙橋 拓也</a></li></dt>
+              <dt><li><a href="">古山 正己</a></li></dt>
+              <dt><li><a href="">吉田 亜美</a></li></dt><br>
+
+              <dt id="break"><li><a href="">金古 知里</a></li></dt>
+              <dt><li><a href="">信乃 希</a></li></dt>
+              <dt><li><a href="">高橋 奈央</a></li></dt>
+              <dt><li><a href="">松藤 典彦</a></li></dt>
+
+              <dt id="break"><li><a href="">鎌田 潤一</a></li></dt>
+              <dt><li><a href="">白井 綾乃</a></li></dt>
+              <dt><li><a href="">高原 由津莉</a></li></dt>
+              <dt><li><a href="">松本 康希</a></li></dt><br>
+
+              <dt id="break"><li><a href="">木村 由梨</a></li></dt>
+              <dt><li><a href="">白田 千翔</a></li></dt>
+              <dt><li><a href="">田中 彩織</a></li></dt>
+              <dt><li><a href="">松山 涼</a></li></dt>
+            </div>
+          </div>
+          <div id="box_h2">
+            <p>主催</p>
+          </div>
+          <div class="text">
+            <div class="li_alone">
+              <li><a href="" >多摩美術大学情報デザイン学科メディア芸術コース研究室</a></li>
+            </div>
+          </div>
+
+        </div>
+        <div class="box">
+          <img class="box_h" src="img/event.png"></img>
+          <div id="box_h2">
+            <p>豪華クリエイターによるトークショー決定！！19:00〜</p>
+          </div>
+          <div class="text">
+            <div id="yoshida">
+              <p>ゲスト 吉田 ユニ</p>
+            </div>
+          </div>
+          <div id="box_h2">
+            <p>フードデザインラボの学生による細胞フード@4Fシンポジア</p>
+          </div>
+          <div class="text">
+            <p>
+              レセプションパーティーで振る舞うフード、それも一つの メディアとして作品にできないか？多摩美術大学フードデザインラボはそのような思いから結成されたグループです。手を汚さず、環境に優しいことはもちろん、作品として楽しむことのできるフィンガーフードの制作を行っています。2011年度の「多摩美のメディア芸術祭」で発足後、いくつかの展覧会のレセプションパーティにて作品を発表してきました。
+            </p>
+            <div class="li_alone">
+              <li><a href="" >フードデザインラボ</a></li>
+            </div>
+          </div>
+          <div id="box_h2">
+            <p>プログラム</p>
+          </div>
+          <div class="text">
+            <p>
+              1/23(Fri)<br>
+              18:00 　オープニングパーティー<br>
+              18:30　レセプション挨拶@B1シンポジア<br>
+              19:00　トークショー ゲスト吉田ユニさん<br>
+              前半30分「吉田ユニプレゼン」後半「吉田ユニ・寺井・港トーク」<br>
+            </p>
+            <p>
+              終了後パーティー（フードデザイン料理 @4Fギャラリー）<br>
+              ※トークの際に吉田ユニさんの物販告知（トーク時にシンポジア ＋ パーティー時にギャラリーで販売）<br>
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img class="box_h" src="img/acsess.png"></img>
+          <div class="text">
+            <p>
+              〒106-0032 <br>
+              東京都港区六本木5-17-1 AXISビル 4階<br>
+              <br>
+              東京メトロ日比谷線：六本木駅3番出口<br>
+              都営大江戸線：六本木駅 3・5番出口<br>
+              六本木交差点から外苑東通りを東京タワー方面へ徒歩約8分<br>
+            </p>
+            <img src="img/map.png"></img>
+          </div>
+
 
 
       </div>
       <div id = "footer">
+        <div id = "link">
+            <p>LINK</p>
+              <li>
+                <a href = "http://www.idd.tamabi.ac.jp/art/">多摩美術大学情報デザイン学科メディア芸術コース</a>
+              </li>
+              <li>
+                <a href = "http://www.tamabi.ac.jp/index_j.htm">多摩美術大学</a>
+              </li>
 
+
+        </div>
+        <div id = "sns">
+          <p>SNS</p>
+          <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/tweet_button.ff7d9077a26377d36b6a53b1a95be617.en.html#_=1419853302510&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=file%3A%2F%2F%2FUsers%2Fharajunnosuke%2FDocuments%2Fweb%2Fsel2_web%2Findex.html&amp;size=m&amp;text=%E5%A4%9A%E6%91%A9%E7%BE%8E%E3%81%AE%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E8%8A%B8%E8%A1%933%E5%B9%B4%E5%AD%A6%E5%A4%96%E5%B1%95%E3%80%81s%C3%A9l_2%E5%B1%95%EF%BC%81%E7%89%B9%E8%A8%AD%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%EF%BC%81&amp;url=http%3A%2F%2Fwww.idd.tamabi.ac.jp%2Fart%2Fexhibit%2Fsel2%2F" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 109px; height: 20px; margin: 0px 15px 10px;"></iframe>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </div>
     </div>
   </section>
