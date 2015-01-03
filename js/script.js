@@ -99,30 +99,30 @@ $(function(){
 
   });
 
-  $("#movie").hover(function(){
-      $("#movie").animate({'color':"#757C82"},150);},function(){
-    $("#movie").animate({'color':"#4D4E4F"},150);
+  $("#m_movie").hover(function(){
+      $("#m_movie").animate({'color':"#757C82"},150);},function(){
+    $("#m_movie").animate({'color':"#4D4E4F"},150);
   });
 
-  $("#about").hover(function(){
-    $("#about").animate({'color':"#757C82"},150);},function(){
-      $("#about").animate({'color':"#4D4E4F"},150);
+  $("#m_about").hover(function(){
+    $("#m_about").animate({'color':"#757C82"},150);},function(){
+      $("#m_about").animate({'color':"#4D4E4F"},150);
   });
 
 
-  $("#artists").hover(function(){
-    $("#artists").animate({'color':"#757C82"},150);},function(){
-      $("#artists").animate({'color':"#4D4E4F"},150);
+  $("#m_artists").hover(function(){
+    $("#m_artists").animate({'color':"#757C82"},150);},function(){
+      $("#m_artists").animate({'color':"#4D4E4F"},150);
     });
 
-  $("#events").hover(function(){
-    $("#events").animate({'color':"#757C82"},150);},function(){
-      $("#events").animate({'color':"#4D4E4F"},150);
+  $("#m_events").hover(function(){
+    $("#m_events").animate({'color':"#757C82"},150);},function(){
+      $("#m_events").animate({'color':"#4D4E4F"},150);
     });
 
-  $("#acsess").hover(function(){
-    $("#acsess").animate({'color':"#757C82"},150);},function(){
-      $("#acsess").animate({'color':"#4D4E4F"},150);
+  $("#m_acsess").hover(function(){
+    $("#m_acsess").animate({'color':"#757C82"},150);},function(){
+      $("#m_acsess").animate({'color':"#4D4E4F"},150);
     });
 
 
