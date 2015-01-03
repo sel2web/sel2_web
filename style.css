@@ -1,174 +1,301 @@
-html{
-	background: #ffffff;
+head , body{
+margin: 0px 0px 0px;
+height: 100%;
+font-family: "Avenir";
 }
-head{
-    margin: 0px 0px 0px;
-  }
-  body{
-    margin: 0px 0px 0px;
-  }
 
-  #data{
+#main{
+	position:relative;
+	width: 100%;
+	min-height: 100%;
+	height: auto;
 
-    position:fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 50;
-
-  }
-  #data_2{
-
-    position:fixed;
-    top: 25px;
-    left: 10px;
-    z-index: 50;
-
-  }
-
-  #logo{
-
-    position:relative;
-    text-align:center;
-    top: 200px;
-    height: 600px;
-    opacity: 0;
-    z-index: 40;
-
-  }
-  #arrow{
-
-    position:relative;
-    text-align:center;
-    top: 50px;
-    z-index:40;
-    opacity:0;
-
-  }
-#menu_logo p{
-    position:relative;
-    float:left;
-    top:24px;
-    left: 208px;
-    margin: 0px 25px 0px;
-    color: #4D4E4F;
-    font-family: "Avenir";
+}
 
 
+.container{
+
+	position:relative;
+	min-width: 1000px;
+	width: 100%;
+	height: 100%;
+	top: 32px;
+	margin: 0px 0px 0px;
+	display: none;
 
 
-  }
+}
+.container_2{
 
-  .menu_logo{
+	position:relative;
+	min-width: 1000px;
+	width: 100%;
+	height: 100%;
+	top:24px;
+	margin: 0px 0px 0px;
+	display: none;
 
-    position:fixed;
-    background-color:rgba(250,250,250,0.7);
-    float:left;
-    width:100%;
-    height: 68px;
-    top: -500px;
-    left: 0px;
-    z-index: 60;
-    color: white;
-    font-size:15px;
+}
+.container_3{
 
-  }
+	position:relative;
+	min-width: 1000px;
+	width: 100%;
+	height: 100%;
+	top:16px;
+	margin: 0px 0px 0px;
+	display: none;
 
-  #lg{
-    position:absolute;
-    float:left;
-    top: 6px;
-    left:60px;
-    margin:0px 10px 0px;
-  }
+}
+.container_4{
 
-  .box{
+	position:relative;
+	min-width: 1000px;
+	width: 100%;
+	height: 100%;
+	top:8px;
+	margin: 0px 0px 0px;
+	display: none;
+
+}
+.container_5{
+
+	position:relative;
+	min-width: 1000px;
+	width: 100%;
+	height: 100%;
+
+	margin: 0px 0px 0px;
+	display: none;
+
+
+}
+
+#data{
+
+	position:fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 50;
+
+}
+#data_2{
+
+	position:fixed;
+	top: 25px;
+	left: 10px;
+	z-index: 50;
+
+}
+
+#logo{
+
+	position:relative;
+	text-align:center;
+	top: 200px;
+	height: 600px;
+	opacity: 0;
+	z-index: 40;
+
+}
+#arrow{
+
+	position:relative;
+	text-align:center;
+	top: 50px;
+	z-index:40;
+	opacity:0;
+
+}
+
+
+.menu_logo{
+
+	position:fixed;
+	background-color:rgba(250,250,250,0.6);
+	float:left;
+	width:100%;
+	height: 68px;
+	top: -500px;
+	left: 0px;
+	z-index: 60;
+	color: white;
+	font-size:15px;
+
+}
+.menu_logo li{
+	position:relative;
+	float:left;
+	top:9px;
+	left: 208px;
+	margin: 0px 25px 0px;
+	list-style-type: none;
+}
+.menu_logo li a{
+	color: #4D4E4F;
+	text-decoration: none;
+}
+
+#lg{
+	position:absolute;
+	float:left;
+	top: 6px;
+	left:60px;
+	margin:0px 10px 0px;
+}
+#terop{
+	position:absolute;
+
+	right:30px;
+	margin:10px;
+}
+
+
+
+
+#back{
+	position:absolute;
+	top: -100px;
+	z-index: 10;
+
+
+
+
+}
+/*  footer{
+position:absolute;
+margin:0;
+height:200px;
+background-color:rgba(250,250,250,0.8);
+
+bottom: 0;
+z-index: 30;
+font-size: 10px;
+
+
+}
+footer p{
+margin:12px;
+}*/
+#link{
+	position:absolute;
+	padding:10px;
+	left:100px;
+	margin:30px;
+
+	width:300px;
+	}/*
+	li{
+	font-size: 8px;
+	margin:15px;
+	}*/
+	/*  #sns{
+	position:absolute;
+	padding:10px;
+	left:500px;
+	margin:30px;
+
+
+	}*/
+	#twitter{
+		position:fixed;
+		bottom:-200px;
+		right:30px;
+		width:80px;
+		height:16px;
+		padding:2pt;
+		z-index: 100;
+
+	}
+
+	.box{
 		position:relative;
 		top:1000px;
-  	width:1040px;
-  	margin: 0 auto;
-  	background-color: rgba(255,255,255,0.6);
-  	margin-bottom: 50px;
+		width:1040px;
+		margin: 0 auto;
+		background-color: rgba(250,250,250,0.6);
+		margin-bottom: 50px;
 		z-index:30;
-  }
-  .box_h{
-  	margin: 0 auto;
-  	padding: 40px 0px 20px;
-  	text-align: center;
-  	display: block;
-  	margin-right: auto;
-  	margin-left: auto;
-  }
-  #box_h2{
-  	margin: 0 auto;
-  	width: 850px;
-  	height: 45px;
-  	background-image: url(img/box_h2.png) ;
-  }
-  @font-face {
-	font-family: "DShirkg5";
-	src:url(font/DShirkg5.ttc) format("truetype");
-}
+	}
+	.box_h{
+		margin: 0 auto;
+		padding: 40px 0px 20px;
+		text-align: center;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#box_h2{
+		margin: 0 auto;
+		width: 850px;
+		height: 45px;
+		background-image: url(img/box_h2.png) ;
+	}
+	@font-face {
+		font-family: "DShirkg5";
+		src:url(font/DShirkg5.ttc) format("truetype");
+	}
 
-  #box_h2 p{
-  	font-family: "DShirkg5";
-	vertical-align:middle;
-	margin:20px 0px 20px 0px;
-  	padding-top: 12px;
-  	font-size: 25px;
-  	text-align: center;
-  }
-  .text{
-  	padding: 20px 90px 60px 90px;
-  	width: 860px;
-  }
- .text p{
-  	font-family: "DShirkg5";
-  	font-size: 17px;
-  	text-align: justify;
-  }
- .text .li_alone{
- 	padding-top: 20px;
- }
- .text .li_alone a{
- 	font-size: 20px;
- }
- #list{
- 	padding-left: 50px;
- 	height: 280px;
- }
- dt{
- 	width:95px;
- 	margin: 7px 30px 7px 30px;
- 	float: left;
-  	font-family: "DShirkg5";
- }
- .break{
- 	clear: both;
- }
- .text dt li{
- 	text-align: left;
- }
- .text dt li a{
- 	color: #000000;
- 	list-style-type: none;
- 	text-decoration: none;
- }
-  .text li {
- 	text-align: center;
- 	list-style-type: none;
- 	 }
- .text li a{
- 	text-decoration: none;
-   	font-family: "DShirkg5";
- 	color: #000000;
- }
- .text #yoshida p{
- 	text-align: center;
- 	font-size: 26px;
- }
+	#box_h2 p{
+		font-family: "DShirkg5";
+		vertical-align:middle;
+		margin:20px 0px 20px 0px;
+		padding-top: 12px;
+		font-size: 25px;
+		text-align: center;
+	}
+	.text{
+		padding: 20px 90px 60px 90px;
+		width: 860px;
+	}
+	.text p{
+		font-family: "DShirkg5";
+		font-size: 17px;
+		text-align: justify;
+	}
+	.text .li_alone{
+		padding-top: 20px;
+	}
+	.text .li_alone a{
+		font-size: 20px;
+	}
+	#list{
+		padding-left: 50px;
+		height: 300px;
+	}
+	dt{
+		width:95px;
+		margin: 7px 30px 7px 30px;
+		float: left;
+		font-family: "DShirkg5";
+	}
+	.break{
+		clear: both;
+	}
+	.text dt li{
+		text-align: left;
+	}
+	.text dt li a{
+		color: #000000;
+		list-style-type: none;
+		text-decoration: none;
+	}
+	.text li {
+		text-align: center;
+		list-style-type: none;
+	}
+	.text li a{
+		text-decoration: none;
+		font-family: "DShirkg5";
+		color: #000000;
+	}
+	.text #yoshida p{
+		text-align: center;
+		font-size: 26px;
+	}
 
- .text #yoshida img{
- 	width: 425px;
- 	float: left;
- 	padding: 5px;
- }
+	.text #yoshida img{
+		width: 425px;
+		float: left;
+		padding: 5px;
+	}
