@@ -1,8 +1,17 @@
+
+
+if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+  location.href = 'sp/index.html';
+}
+
+
 var  fade = 0;
 var menudown = false;
 
 
 $(function(){
+
+
 
   if(fade == 0){
 
@@ -62,7 +71,7 @@ $(function(){
           $('.container_2').fadeIn(1200);
           $('.container_3').fadeIn(1200);
           $('.container_4').fadeIn(1200);
-        //  $('.container_5').fadeIn(1200);
+          $('.container_5').fadeIn(1200);
 
 
             if(menudown == false){
