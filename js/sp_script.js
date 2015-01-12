@@ -26,7 +26,10 @@ $(function(){
           $('.menu_logo').animate({'top':0},{'duration':1000});
           $('#menu').animate({'top':0},{'duration':1000});
           $('#twitter').animate({'bottom':20},{'duration':1000});
+          $("#back").animate({'opacity':1},{'duration':1000});
+
         }
+    
 
   });
 

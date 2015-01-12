@@ -251,8 +251,27 @@ margin:12px;
 	}
 	.text p{
 		font-family: "DShirkg5";
+		margin:20px 0px 0px;
 		font-size: 17px;
 		text-align: justify;
+	}
+	.text h1{
+		font-size:40px;
+		font-weight:normal;
+		display:inline;
+		margin:5px 0px;
+	}
+	.text h2{
+		font-size:20px;
+		font-weight:normal;
+		display:inline;
+		margin:5px 0px;
+	}
+	.text h3{
+		font-size:30px;
+		font-weight:normal;
+		display:inline;
+		margin:0px;
 	}
 	.text .li_alone{
 		padding-top: 20px;
@@ -307,4 +326,8 @@ margin:12px;
 
 	#movie,#about,#artist,#event,#acsess{
 		padding:60px 0px 30px;
+	}
+	#food{
+		font-size:14px;
+		margin:0px 0px 0px;
 	}
