@@ -283,22 +283,23 @@ margin:12px;
 		padding-left: 50px;
 		height: 300px;
 	}
-	dt{
-		width:95px;
-		margin: 7px 30px 7px 30px;
-		float: left;
-		font-family: "DShirkg5";
+	ul li{
+		font-size:20px;
+		width:110px;
+		padding-left:0px;
+		float:left;
+		text-align:center;
+		margin:0px 7px 10px ;
+		list-style-type:none;
+
 	}
-	.break{
-		clear: both;
+	ul li a{
+		color:#000;
+		text-decoration:none;
 	}
-	.text dt li{
-		text-align: left;
-	}
-	.text dt li a{
-		color: #000000;
-		list-style-type: none;
-		text-decoration: none;
+	a{
+		color:#000;
+		text-decoration:none;
 	}
 	.text li {
 		text-align: center;

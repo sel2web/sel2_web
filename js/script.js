@@ -7,9 +7,18 @@ if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('i
 
 var  fade = 0;
 var menudown = false;
+var w = $(window).width();
 
+var heightOver = false;
 
 $(function(){
+
+  if(w < 1050 ){
+    $("#terop").fadeOut(200);
+  }
+  if(w > 1480){
+    heightOver = true;
+  }
 
 
 
@@ -25,6 +34,23 @@ $(function(){
       }
     });
   }
+
+  $(window).resize(function(){
+    var width = $(window).width();
+
+    if(width < 1050 ){
+      $("#terop").fadeOut(300);
+      }
+    if(width >1050){
+      $("#terop").fadeIn(300);
+    }
+    if(width < 1480){
+      $(".container_5").fadeIn(200);
+        }
+    if(width > 1480){
+      $(".container_5").fadeOut(200);
+    }
+  });
 
   $(window).scroll(function(){
     var s = ($(this).scrollTop());
@@ -71,8 +97,9 @@ $(function(){
           $('.container_2').fadeIn(1200);
           $('.container_3').fadeIn(1200);
           $('.container_4').fadeIn(1200);
-          $('.container_5').fadeIn(1200);
-
+          if(heightOver == false){
+            $('.container_5').fadeIn(1200);
+          }
 
             if(menudown == false){
               $('.menu_logo').animate({'top':0},{'duration':1000}),menudown = true;
